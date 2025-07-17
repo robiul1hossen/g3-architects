@@ -51,6 +51,7 @@ header {
 .navbar {
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 100px;
 }
 .brand {
   font-size: 3rem;
@@ -128,8 +129,23 @@ header {
 }
 /* Responsive Header */
 @media screen and (max-width: 576px) {
+  .brand {
+    font-size: 1.7rem;
+  }
+
   .navbar,
   .nav-links {
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .banner-content {
+    text-align: left;
+  }
+  .banner-title {
+    font-size: 1.5rem;
+  }
+  .team {
+    flex-direction: column;
+    row-gap: 20px;
   }
 }
