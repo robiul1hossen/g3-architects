@@ -127,6 +127,40 @@ header {
   margin-top: 24px;
   margin-bottom: 32px;
 }
+/* Some Facts style */
+.facts-heading {
+  max-width: 540px;
+}
+.facts-title {
+  font-size: 2.8rem;
+  font-weight: bold;
+}
+.facts-details {
+  line-height: 26px;
+  margin-top: 24px;
+}
+.facts-card-container {
+  margin-bottom: 180px;
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+}
+.facts-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border: 1px solid #ff900e;
+  width: 240px;
+  padding: 50px 0px;
+}
+.facts-num {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
 /* Responsive Header */
 @media screen and (max-width: 576px) {
   .brand {
@@ -151,12 +185,16 @@ header {
     grid-template-columns: repeat(1, 1fr);
   }
   .team-img {
-    /* width: 114% !important; */
     padding: 0px 20px;
   }
   .feature {
     max-width: 500px;
     margin-left: 20px;
+  }
+  /* Some facts responsive style */
+  .facts-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
   }
 }
 /* Responsive for medium device */
@@ -166,5 +204,9 @@ header {
   }
   .feature {
     margin-left: -220px;
+  }
+  .facts-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
   }
 }
